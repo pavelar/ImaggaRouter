@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		ADD701B9261FC912004E8C0F /* ImaggaRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD701B7261FC912004E8C0F /* ImaggaRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADD701CE261FD07A004E8C0F /* ImageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD701CD261FD07A004E8C0F /* ImageRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ADD701B4261FC912004E8C0F /* ImaggaRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImaggaRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD701B7261FC912004E8C0F /* ImaggaRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImaggaRouter.h; sourceTree = "<group>"; };
 		ADD701B8261FC912004E8C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD701CD261FD07A004E8C0F /* ImageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				ADD701B7261FC912004E8C0F /* ImaggaRouter.h */,
 				ADD701B8261FC912004E8C0F /* Info.plist */,
+				ADD701CD261FD07A004E8C0F /* ImageRouter.swift */,
 			);
 			path = ImaggaRouter;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					ADD701B3261FC912004E8C0F = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD701CE261FD07A004E8C0F /* ImageRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		ADD701BD261FC912004E8C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EDF5V5AT99;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.advsolutionpros.ImaggaRouter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		ADD701BE261FC912004E8C0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EDF5V5AT99;
